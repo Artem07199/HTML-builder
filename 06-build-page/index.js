@@ -25,16 +25,6 @@ readStream.on('data', data => {
   });
 });
 
-
-
-
-
-
-
-
-
-
-
 fs.readdir('./06-build-page/styles', {withFileTypes: true}, ((err, data) => {
   data.forEach(file => {
     if (path.extname(file.name) === '.css') {
