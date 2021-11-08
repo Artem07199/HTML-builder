@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-
 fs.readdir('./03-files-in-folder/secret-folder', { withFileTypes: true }, (err, data) => {
   data.forEach( file => {
     if (file.isFile()) {

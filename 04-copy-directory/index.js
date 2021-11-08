@@ -6,9 +6,10 @@ fs.mkdir('./04-copy-directory/files-copy', { recursive: true }, () => {
     data.forEach(file => {
       fs.copyFile('./04-copy-directory/files' + '/' + file, './04-copy-directory/files-copy' + '/' + file, function() {});
     });
-    console.log('File Copied');
+    console.log('Files Copied');
   });
       
+  
   fs.readdir('./04-copy-directory/files-copy', (err, data) => {
     data.forEach(file => {
       fs.stat('./04-copy-directory/files' + '/' + file, function ( err) {

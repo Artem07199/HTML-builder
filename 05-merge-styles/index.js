@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+
 fs.readdir('./05-merge-styles/styles', {withFileTypes: true}, ((err, data) => {
   data.forEach(file => {
     if (path.extname(file.name) === '.css') {
